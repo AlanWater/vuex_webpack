@@ -1,6 +1,7 @@
 <template>
     <div class="fadeFromRight">5678</div>
 </template>
+
 <style>
     @-webkit-keyframes fromRight{
         0%{

@@ -18,7 +18,10 @@
                 myfirstVue:'hellow vue1234!',
                 toFirstVue:'toFirstVue donts',
                 toSecondVue:'toSecondVue',
-                showStateDesc:'clickToShowStateDesc'
+                showStateDesc:'clickToShowStateDesc',
+                test:{
+                    a:2
+                }
             }
         },
         components:{
@@ -26,6 +29,10 @@
         },
         methods:mapMutations([
             'showState1'
-        ])
+        ]),
+        created: function () {
+            // `this` 指向 vm 实例
+            console.log('app in: ' + this.a)
+        }
     }
 </script>
